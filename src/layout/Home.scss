@@ -1,0 +1,20 @@
+.home {
+  border: solid 1px blue;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  align-items: center;
+  justify-content: center;
+
+  height: 90vh;
+  padding: 20px;
+
+  @media screen and (max-width: 750px) {
+    margin-left: -3rem;
+  }
+
+  @media screen and (min-width: 751px) {
+    margin-left: 3rem;
+  }
+}

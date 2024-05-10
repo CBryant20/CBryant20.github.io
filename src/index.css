@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+
+  background: #f7f4e9;
+
+  color: black;
+
+  min-height: 100vh;
+
+  aside {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: 750px) {
+      aside {
+        display: none !important;
+      }
+    }
+  }
+
+  .main-root {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 5.5em;
+    margin-left: 3em;
+
+    @media screen and (min-width: 750px) {
+      margin-left: 0;
+    }
+  }
+}

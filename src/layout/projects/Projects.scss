@@ -1,0 +1,56 @@
+.main-project {
+  position: relative;
+  // margin-left: 3rem;
+
+  .back-button {
+    border: solid 1px red;
+    display: flex;
+    font-size: 1.5rem;
+
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .projects {
+    border: solid 1px orange;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
+
+    .image-link {
+      border: solid 1px pink;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      .project-title {
+        border: solid 1px black;
+        padding: 1rem;
+
+        background: #fdf0be;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  .project-link {
+    text-decoration: none;
+
+    img {
+      max-width: 100%;
+      padding: 3rem;
+    }
+  }
+
+  @media screen and (max-width: 750px) {
+    margin-left: -3rem;
+  }
+
+  @media screen and (min-width: 751px) {
+    margin-left: 3rem;
+  }
+}
